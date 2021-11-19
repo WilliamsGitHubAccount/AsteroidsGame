@@ -1,4 +1,14 @@
-class Star //note that this class does NOT extend Floater
-{
-  //your code here
+class Star{
+  private double x, y;
+  private int size;
+  Star(){
+    x = Math.random()*800;
+    y = Math.random()*800;
+    size = (int)(Math.random()*4)+3;
+  }
+  void update(){
+      noStroke();
+    ellipse((float)x, (float)y, size, size);
+  }
+
 }
