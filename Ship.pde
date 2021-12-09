@@ -1,5 +1,4 @@
 public class Ship extends Floater{
-  private boolean hyperspaceFlag;
   public Ship(){
     corners = 4;
     xCorners = new int[] {15, -10, -5, -10};
@@ -8,7 +7,6 @@ public class Ship extends Floater{
     myXspeed = 0 ; myYspeed = 0;
     myPointDirection = 0;
     myColor = 255;
-    hyperspaceFlag = false;
   }
   
   public void hyperspace(){
@@ -19,4 +17,17 @@ public class Ship extends Floater{
     myYspeed = 0;
   }
   
+  public void show(){
+    noFill();
+    stroke(255);
+    super.show();
+  }
+  
+  public double getX(){
+    return myCenterX;
+  }
+  
+    public double getY(){
+    return myCenterY;
+  }
 }
