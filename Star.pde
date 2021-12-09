@@ -8,6 +8,7 @@ class Star{
   }
   void update(){
       noStroke();
+      fill(255);
     ellipse((float)x, (float)y, size, size);
   }
 
